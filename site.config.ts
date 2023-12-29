@@ -6,11 +6,11 @@ export default siteConfig({
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: 'c149cb9f-e94f-486c-8913-68f64341d8f4',
 
   // basic site info (required)
   name: 'Next.js Notion Starter Kit',
-  domain: 'https://mhjohnso-purdue.github.io/notionWiki/',
+  domain: 'notion-wiki-lake.vercel.app',
   author: 'Max Johnson',
 
   // open graph metadata (optional)
@@ -31,7 +31,7 @@ export default siteConfig({
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
-  isPreviewImageSupportEnabled: true,
+  isPreviewImageSupportEnabled: false,
 
   // whether or not redis is enabled for caching generated preview images (optional)
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
@@ -50,16 +50,16 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+    },
+    {
+      title: 'Contact',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    }
+  ]
 })
